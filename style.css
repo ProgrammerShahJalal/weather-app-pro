@@ -87,12 +87,14 @@ body{
     background-color: white;
     text-align: center;
     color: black;
-    width: 30%;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
     border-radius: 25px;
     padding: 25px;
   }
   #popup-img{
-    width: 275px;
+    width: 200px;
   }
   
   
