@@ -9,7 +9,9 @@ let weather = {
         )
             .then(response => {
                 if (!response.ok) {
-                    alert("Search by city name! Otherwise result won't found.");
+                    document.getElementById('card').style.display = 'none';
+                    document.getElementById('popup').style.display = 'block';
+                    changeBackground();
                 }
                 return response.json();
             })
@@ -35,6 +37,14 @@ let weather = {
     },
 };
 
+function changeBackground() {
+    document.body.style.background = "#091921";
+}
+
+const refresh = () => {
+    location.reload();
+}
+
 document
     .querySelector(".search button")
     .addEventListener("click", function () {
@@ -50,3 +60,5 @@ document
     });
 
 weather.fetchWeather("Dhaka");
+
+document.getElementById('popup').style.display = 'none';
