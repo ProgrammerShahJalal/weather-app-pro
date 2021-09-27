@@ -9,8 +9,7 @@ let weather = {
         )
             .then(response => {
                 if (!response.ok) {
-                    alert("Sorry weather found.");
-                    throw new Error("Naaaa! No weather found.");
+                    alert("Search by city name! Ohterwise result won't found.");
                 }
                 return response.json();
             })
