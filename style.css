@@ -83,3 +83,34 @@ body{
     top: 0;
     left: 20px;
   }
+  #popup{
+    background-color: white;
+    text-align: center;
+    color: black;
+    width: 30%;
+    border-radius: 25px;
+    padding: 25px;
+  }
+  #popup-img{
+    width: 275px;
+  }
+  
+  
+  #ok {background-image: linear-gradient(to right, #000428 0%, #004e92  51%, #000428  100%)}
+  #ok {
+    width: auto;
+     margin: 10px;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     border-radius: 10px;
+   }
+
+   #ok:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
